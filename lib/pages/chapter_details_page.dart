@@ -63,6 +63,10 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: Card(
                                     child: ListTile(
+                                      onTap: () =>
+                                          Get.toNamed('/viewVideo', arguments: {
+                                        "videoPath": data.videos![i].videoPath
+                                      }),
                                       title: Text(
                                         data.videos![i].videoName!,
                                       ),

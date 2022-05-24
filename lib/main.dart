@@ -3,6 +3,7 @@ import 'package:app/pages/chapter_details_page.dart';
 import 'package:app/pages/learning_resource_page.dart';
 import 'package:app/pages/home_page.dart';
 import 'package:app/pages/subject_details_page.dart';
+import 'package:app/pages/view_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -48,6 +49,11 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/chapterDetails',
           page: () => const ChapterDetailsPage(),
+        ),
+        GetPage(
+          name: '/viewVideo',
+          page: () => const ViewVideoPage(),
+          binding: ViewVideoBinding(),
         ),
       ],
     );
