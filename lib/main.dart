@@ -1,7 +1,7 @@
 import 'package:app/other/bindings.dart';
-import 'package:app/pages/dashboard_page.dart';
 import 'package:app/pages/learning_resource_page.dart';
 import 'package:app/pages/home_page.dart';
+import 'package:app/pages/subject_details_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -40,10 +40,7 @@ class MyApp extends StatelessWidget {
           page: () => const LearningResource(),
           binding: DashBoardBinding(),
         ),
-        GetPage(
-          name: '/dashboard',
-          page: () => const Dashboard(),
-        ),
+        GetPage(name: '/subjectDetails', page: () => const SubjectDetailsPage())
       ],
     );
   }

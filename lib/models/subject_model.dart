@@ -1,28 +1,52 @@
+// To parse this JSON data, do
+//
+//     final subjects = subjectsFromMap(jsonString);
+
+import 'dart:convert';
+
+List<Subjects> subjectsFromMap(String str) =>
+    List<Subjects>.from(json.decode(str).map((x) => Subjects.fromMap(x)));
+
+String subjectsToMap(List<Subjects> data) =>
+    json.encode(List<dynamic>.from(data.map((x) => x.toMap())));
+
 class Subjects {
-  final String? subjects;
-  final List<Chapters>? chapters;
-  bool? isExpanded;
   Subjects({
-    this.subjects,
+    this.subjectName,
+    this.iconPath,
     this.chapters,
-    this.isExpanded,
   });
+
+  final String? subjectName;
+  final String? iconPath;
+  final List<Chapter>? chapters;
+
+  factory Subjects.fromMap(Map<String, dynamic> json) => Subjects(
+        subjectName: json["subjectName"],
+        iconPath: json["iconPath"],
+        chapters:
+            List<Chapter>.from(json["chapters"].map((x) => Chapter.fromMap(x))),
+      );
+
+  Map<String, dynamic> toMap() => {
+        "subjectName": subjectName,
+        "iconPath": iconPath,
+        "chapters": List<dynamic>.from(chapters!.map((x) => x.toMap())),
+      };
 }
 
-class Chapters {
-  final String? chapterName;
-  final String? videoName;
-  final String? videoPath;
-  final String? pdfName;
-  final String? pdfPath;
-  final bool? isExpanded;
-
-  Chapters({
+class Chapter {
+  Chapter({
     this.chapterName,
-    this.videoName,
-    this.videoPath,
-    this.pdfName,
-    this.pdfPath,
-    this.isExpanded,
   });
+
+  final String? chapterName;
+
+  factory Chapter.fromMap(Map<String, dynamic> json) => Chapter(
+        chapterName: json["chapterName"],
+      );
+
+  Map<String, dynamic> toMap() => {
+        "chapterName": chapterName,
+      };
 }

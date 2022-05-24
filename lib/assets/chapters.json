@@ -1,0 +1,74 @@
+[
+  {
+    "subjectName": "English",
+    "iconPath": "lib/assets/subjecticons/new-english.svg",
+    "chapters": [{ "chapterName": "1. Unit-1 Vini's Smile" }]
+  },
+  {
+    "subjectName": "Gujrathi",
+    "iconPath": "lib/assets/subjecticons/new-english.svg",
+    "chapters": [{ "chapterName": "૧.  મેળામાં" }]
+  },
+  {
+    "subjectName": "Hindi",
+    "iconPath": "lib/assets/subjecticons/new-hindi.svg",
+    "chapters": [{ "chapterName": "૧. चित्र के संग-संग" }]
+  },
+  {
+    "subjectName": "Mathematics",
+    "iconPath": "lib/assets/subjecticons/new-mathematics.svg",
+    "chapters": [
+      { "chapterName": "૧. પૂર્ણાંક સંખ્યાઓ" },
+      { "chapterName": "૧૦. પ્રાયોગિક ભૂમિતિ" },
+      { "chapterName": "૧૧. પરિમિતિ અને ક્ષેત્રફળ" },
+      { "chapterName": "૧૨. બીજગણિતીય પદાવલિ" },
+      { "chapterName": "૧૩. ઘાત અને ઘાતાંક" },
+      { "chapterName": "૧૪. સંમિતિ" },
+      { "chapterName": "૧૫. ઘન આકારોનું પ્રત્યક્ષીકરણ" },
+      { "chapterName": "૨. અપૂર્ણાંક અને દશાંશ સંખ્યાઓ" },
+      { "chapterName": "૩. માહિતીનું નિયમન" },
+      { "chapterName": "૪. સાદા સમીકરણ" },
+      { "chapterName": "૫. રેખા અને ખૂણા" },
+      { "chapterName": "૬. ત્રિકોણ અને તેના ગુણધર્મો" },
+      { "chapterName": "૭. ત્રિકોણની એકરૂપતા" },
+      { "chapterName": "૮. રાશિઓની તુલના" },
+      { "chapterName": "૯. સંમેય સંખ્યાઓ" }
+    ]
+  },
+  {
+    "subjectName": "Sanskrit",
+    "iconPath": "lib/assets/subjecticons/new-sanskrit.svg",
+    "chapters": [{ "chapterName": "૧. चित्रपदानी १ त: ३" }]
+  },
+  {
+    "subjectName": "Science",
+    "iconPath": "lib/assets/subjecticons/new-science.svg",
+    "chapters": [
+      { "chapterName": "૧. વનસ્પતિમાં પોષણ" },
+      { "chapterName": "૧૦. સજીવોમાં શ્વસન" },
+      { "chapterName": "૧૧. પ્રાણીઓ અને વનસ્પતિઓમાં વહન" },
+      { "chapterName": "૧૨. વનસ્પતિમાં પ્રજનન" },
+      { "chapterName": "૧૩. ગતિ અને સમય" },
+      { "chapterName": "૧૪. વિદ્યુતપ્રવાહ અને તેની અસર" },
+      { "chapterName": "૧૫. પ્રકાશ" },
+      { "chapterName": "૧૬. પાણી : એક અમૂલ્ય સ્ત્રોત" },
+      { "chapterName": "૧૭. જંગલો : આપણી જીવાદોરી" },
+      { "chapterName": "૧૮. દૂષિત પાણીની વાર્તા" },
+      { "chapterName": "૨. પ્રાણીઓમાં પોષણ" },
+      { "chapterName": "૩. રેસાથી કાપડ સુધી" },
+      { "chapterName": "૪. ઉષ્મા" },
+      { "chapterName": "૫. એસિડ, બેઈઝ અને ક્ષાર" },
+      { "chapterName": "૬. ભૌતિક અને રાસાયણિક ફેરફારો" },
+      {
+        "chapterName": "૭. હવામાન, આબોહવા અને આબોહવાની સાથે પ્રાણીઓનું અનુંકૂલન"
+      },
+      { "chapterName": "૮. પવન, વાવાઝોડું અને ચક્રવાત" },
+      { "chapterName": "૯. ભૂમિ" }
+    ]
+  },
+  {
+    "subjectName": "Social Science",
+    "iconPath": "lib/assets/subjecticons/new-socialscience.svg",
+    "chapters": [{ "chapterName": "૧. રાજપૂતયુગ : નવાં શાસકો અને રાજ્યો" }]
+  }
+]

@@ -15,113 +15,152 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        resizeToAvoidBottomInset: false,
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Material(
-              elevation: 5,
-              borderRadius: BorderRadius.circular(20),
+        resizeToAvoidBottomInset: true,
+        backgroundColor: Colors.black87,
+        body: SingleChildScrollView(
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.all(24.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
                     child: Container(
                       decoration: containerDecoration,
-                      height: MediaQuery.of(context).size.height,
-                      width: 300,
+                      height: MediaQuery.of(context).size.height * 0.761,
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(
-                              top: 36.0,
-                              bottom: 36.0,
+                              top: 16.0,
+                              left: 16.0,
+                              right: 16.0,
+                              bottom: 16.0,
+                            ),
+                            child: SizedBox(
+                              height: 100,
+                              child: Image.asset(
+                                'lib/assets/gshalaicon.png',
+                                fit: BoxFit.scaleDown,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              top: 16.0,
+                              bottom: 16.0,
                             ),
                             child: Text(
-                              'Offline Class',
+                              'G-Shala Offline',
                               textScaleFactor: 2,
                               style: mainHeadingStyle,
                             ),
                           ),
-                          SizedBox(
-                            height: 400,
-                            child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  const Text(
-                                    'Login',
-                                    textScaleFactor: 2,
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  Input(
-                                    hintText: 'User Name',
-                                    onChanged: (value) =>
-                                        {controller.userName.value = value},
-                                  ),
-                                  Input(
-                                    hintText: 'Password',
-                                    onChanged: (value) =>
-                                        {controller.passWord.value = value},
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      left: 16.0,
-                                      right: 16.0,
+                          Padding(
+                            padding: const EdgeInsets.all(24.0),
+                            child: Material(
+                              elevation: 5,
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
+                              child: SizedBox(
+                                height: 350,
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    const Text(
+                                      'Login',
+                                      textScaleFactor: 2,
+                                      style: TextStyle(
+                                        color: Colors.black87,
+                                        fontWeight: FontWeight.w600,
+                                      ),
                                     ),
-                                    child: SizedBox(
-                                      width: 300,
-                                      child: ElevatedButton.icon(
-                                        style: ButtonStyle(
-                                          shape: MaterialStateProperty.all<
-                                                  RoundedRectangleBorder>(
+                                    Input(
+                                      hintText: 'User Name',
+                                      onChanged: (value) =>
+                                          {controller.userName.value = value},
+                                    ),
+                                    Input(
+                                      hintText: 'Password',
+                                      obscure: true,
+                                      onChanged: (value) =>
+                                          {controller.passWord.value = value},
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 16.0,
+                                        right: 16.0,
+                                      ),
+                                      child: SizedBox(
+                                        width: 300,
+                                        child: ElevatedButton.icon(
+                                          style: ButtonStyle(
+                                            shape: MaterialStateProperty.all<
+                                                RoundedRectangleBorder>(
                                               RoundedRectangleBorder(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          10.0),
-                                                  side: const BorderSide())),
-                                          padding: MaterialStateProperty.all(
-                                              const EdgeInsets.only(
-                                            top: 16.0,
-                                            bottom: 16.0,
-                                            right: 8.0,
-                                            left: 8.0,
-                                          )),
-                                          elevation:
-                                              MaterialStateProperty.all(5),
-                                          backgroundColor:
-                                              MaterialStateProperty.all(
-                                            Colors.white,
+                                                borderRadius:
+                                                    BorderRadius.circular(10.0),
+                                                side: const BorderSide(
+                                                  width: 0,
+                                                ),
+                                              ),
+                                            ),
+                                            padding: MaterialStateProperty.all(
+                                                const EdgeInsets.only(
+                                              top: 16.0,
+                                              bottom: 16.0,
+                                              right: 8.0,
+                                              left: 8.0,
+                                            )),
+                                            elevation:
+                                                MaterialStateProperty.all(5),
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                              primaryColor,
+                                            ),
                                           ),
-                                        ),
-                                        onPressed: () {
-                                          Get.toNamed('/dashboard');
-                                        },
-                                        icon: const Icon(
-                                          Icons.login,
-                                          color: Colors.black,
-                                        ),
-                                        label: const Text(
-                                          'Login',
-                                          style: TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 16),
+                                          onPressed: () {
+                                            if (controller
+                                                    .passWord.value.isEmpty ||
+                                                controller
+                                                    .userName.value.isEmpty) {
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                const SnackBar(
+                                                  content: Text(
+                                                      'Please input your username and password'),
+                                                ),
+                                              );
+                                            } else {
+                                              Get.toNamed('/learningresource');
+                                            }
+                                          },
+                                          icon: const Icon(
+                                            Icons.login,
+                                            color: Colors.white,
+                                          ),
+                                          label: const Text(
+                                            'Login',
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 16),
+                                          ),
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ]),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ),
                         ],
                       ),
                     ),
                   ),
-                  Material(
-                    elevation: 5,
-                    borderRadius: BorderRadius.circular(0),
-                    clipBehavior: Clip.antiAliasWithSaveLayer,
-                    color: Colors.white,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.760,
                     child: Image.asset('lib/assets/offlineicon.gif',
                         fit: BoxFit.fitWidth),
                   ),
