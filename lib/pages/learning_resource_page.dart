@@ -101,8 +101,11 @@ class _LearningResourceState extends State<LearningResource> {
                                   alignment: WrapAlignment.spaceEvenly,
                                   spacing: 40,
                                   children: list!
-                                      .map((e) =>
-                                          InkWell(child: subjectDisplayCard(e)))
+                                      .map(
+                                        (e) => InkWell(
+                                          child: subjectDisplayCard(e),
+                                        ),
+                                      )
                                       .toList(),
                                 ),
                               ),
@@ -173,7 +176,7 @@ class _LearningResourceState extends State<LearningResource> {
       onPressed: () {
         Get.toNamed(
           '/subjectDetails',
-          arguments: {"subjectName": e.subjectName},
+          arguments: {"subjectDetails": e},
           preventDuplicates: true,
         );
       },

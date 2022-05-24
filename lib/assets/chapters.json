@@ -18,7 +18,25 @@
     "subjectName": "Mathematics",
     "iconPath": "lib/assets/subjecticons/new-mathematics.svg",
     "chapters": [
-      { "chapterName": "૧. પૂર્ણાંક સંખ્યાઓ" },
+      {
+        "chapterName": "૧. પૂર્ણાંક સંખ્યાઓ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_1.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_1.png"
+          },
+          {
+            "videoName": "અસંમેય સંખ્યાઓ",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_2.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_2.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_1.pdf"
+        }
+      },
       { "chapterName": "૧૦. પ્રાયોગિક ભૂમિતિ" },
       { "chapterName": "૧૧. પરિમિતિ અને ક્ષેત્રફળ" },
       { "chapterName": "૧૨. બીજગણિતીય પદાવલિ" },

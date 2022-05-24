@@ -1,4 +1,5 @@
 import 'package:app/other/bindings.dart';
+import 'package:app/pages/chapter_details_page.dart';
 import 'package:app/pages/learning_resource_page.dart';
 import 'package:app/pages/home_page.dart';
 import 'package:app/pages/subject_details_page.dart';
@@ -40,7 +41,14 @@ class MyApp extends StatelessWidget {
           page: () => const LearningResource(),
           binding: DashBoardBinding(),
         ),
-        GetPage(name: '/subjectDetails', page: () => const SubjectDetailsPage())
+        GetPage(
+          name: '/subjectDetails',
+          page: () => const SubjectDetailsPage(),
+        ),
+        GetPage(
+          name: '/chapterDetails',
+          page: () => const ChapterDetailsPage(),
+        ),
       ],
     );
   }
