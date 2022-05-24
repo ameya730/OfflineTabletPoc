@@ -1,5 +1,6 @@
 import 'package:app/other/bindings.dart';
 import 'package:app/pages/dashboard_page.dart';
+import 'package:app/pages/learning_resource_page.dart';
 import 'package:app/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -35,9 +36,13 @@ class MyApp extends StatelessWidget {
           binding: HomeBinding(),
         ),
         GetPage(
-          name: '/dashboard',
-          page: () => DashBoard(),
+          name: '/learningresource',
+          page: () => const LearningResource(),
           binding: DashBoardBinding(),
+        ),
+        GetPage(
+          name: '/dashboard',
+          page: () => const Dashboard(),
         ),
       ],
     );

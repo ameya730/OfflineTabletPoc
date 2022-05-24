@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
                                       right: 16.0,
                                     ),
                                     child: SizedBox(
-                                      width: 200,
+                                      width: 300,
                                       child: ElevatedButton.icon(
                                         style: ButtonStyle(
                                           shape: MaterialStateProperty.all<

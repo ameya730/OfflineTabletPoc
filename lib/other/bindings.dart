@@ -1,4 +1,4 @@
-import 'package:app/controllers/dashboard_controller.dart';
+import 'package:app/controllers/learning_resource_controller.dart';
 import 'package:app/controllers/home_controller.dart';
 import 'package:get/get.dart';
 
@@ -12,6 +12,6 @@ class HomeBinding implements Bindings {
 class DashBoardBinding implements Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<DashBoardController>(() => DashBoardController());
+    Get.lazyPut<LearningResourceController>(() => LearningResourceController());
   }
 }
