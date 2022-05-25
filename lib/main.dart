@@ -3,6 +3,7 @@ import 'package:app/pages/chapter_details_page.dart';
 import 'package:app/pages/learning_resource_page.dart';
 import 'package:app/pages/home_page.dart';
 import 'package:app/pages/subject_details_page.dart';
+import 'package:app/pages/view_pdf_page.dart';
 import 'package:app/pages/view_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -54,6 +55,10 @@ class MyApp extends StatelessWidget {
           name: '/viewVideo',
           page: () => const ViewVideoPage(),
           binding: ViewVideoBinding(),
+        ),
+        GetPage(
+          name: '/viewPDF',
+          page: () => const ViewPDFPage(),
         ),
       ],
     );

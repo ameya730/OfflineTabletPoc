@@ -30,6 +30,11 @@
             "videoName": "અસંમેય સંખ્યાઓ",
             "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_2.mp4",
             "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_2.png"
+          },
+          {
+            "videoName": "વાસ્તવિક સંખ્યા અને તેની દ્શાંશ-અભિવ્યક્તિ",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_3.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_3.png"
           }
         ],
         "pdfs": {
@@ -37,20 +42,202 @@
           "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_1.pdf"
         }
       },
-      { "chapterName": "૧૦. પ્રાયોગિક ભૂમિતિ" },
-      { "chapterName": "૧૧. પરિમિતિ અને ક્ષેત્રફળ" },
-      { "chapterName": "૧૨. બીજગણિતીય પદાવલિ" },
-      { "chapterName": "૧૩. ઘાત અને ઘાતાંક" },
-      { "chapterName": "૧૪. સંમિતિ" },
-      { "chapterName": "૧૫. ઘન આકારોનું પ્રત્યક્ષીકરણ" },
-      { "chapterName": "૨. અપૂર્ણાંક અને દશાંશ સંખ્યાઓ" },
-      { "chapterName": "૩. માહિતીનું નિયમન" },
-      { "chapterName": "૪. સાદા સમીકરણ" },
-      { "chapterName": "૫. રેખા અને ખૂણા" },
-      { "chapterName": "૬. ત્રિકોણ અને તેના ગુણધર્મો" },
-      { "chapterName": "૭. ત્રિકોણની એકરૂપતા" },
-      { "chapterName": "૮. રાશિઓની તુલના" },
-      { "chapterName": "૯. સંમેય સંખ્યાઓ" }
+      {
+        "chapterName": "૧૦. પ્રાયોગિક ભૂમિતિ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_4.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_4.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_2.pdf"
+        }
+      },
+      {
+        "chapterName": "૧૧. પરિમિતિ અને ક્ષેત્રફળ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૧૨. બીજગણિતીય પદાવલિ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૧૩. ઘાત અને ઘાતાંક",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૧૪. સંમિતિ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૧૫. ઘન આકારોનું પ્રત્યક્ષીકરણ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૨. અપૂર્ણાંક અને દશાંશ સંખ્યાઓ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૩. માહિતીનું નિયમન",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૪. સાદા સમીકરણ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૫. રેખા અને ખૂણા",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૬. ત્રિકોણ અને તેના ગુણધર્મો",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૭. ત્રિકોણની એકરૂપતા",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૮. રાશિઓની તુલના",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      },
+      {
+        "chapterName": "૯. સંમેય સંખ્યાઓ",
+        "videos": [
+          {
+            "videoName": "પ્રસ્તાવિક",
+            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+          }
+        ],
+        "pdfs": {
+          "pdfName": "પ્રસ્તાવિક",
+          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+        }
+      }
     ]
   },
   {

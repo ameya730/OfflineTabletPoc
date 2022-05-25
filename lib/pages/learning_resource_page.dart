@@ -90,6 +90,7 @@ class _LearningResourceState extends State<LearningResource> {
                       builder: (context, snapshot) {
                         if (snapshot.hasData &&
                             snapshot.connectionState == ConnectionState.done) {
+                          print(snapshot.data);
                           list = snapshot.data as List<Subjects>;
 
                           return Expanded(

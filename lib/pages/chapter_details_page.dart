@@ -40,7 +40,6 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                       Container(
                         width: MediaQuery.of(context).size.width * 0.5,
                         height: MediaQuery.of(context).size.height,
-                        color: Colors.black87,
                         child: Column(
                           children: [
                             const Padding(
@@ -54,21 +53,64 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                                 ),
                               ),
                             ),
-                            ListView.builder(
+                            GridView.builder(
                               shrinkWrap: true,
                               physics: const NeverScrollableScrollPhysics(),
+                              gridDelegate:
+                                  const SliverGridDelegateWithFixedCrossAxisCount(
+                                      crossAxisCount: 2, childAspectRatio: 1),
                               itemCount: data.videos!.length,
                               itemBuilder: (context, i) {
-                                return Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Card(
-                                    child: ListTile(
-                                      onTap: () =>
-                                          Get.toNamed('/viewVideo', arguments: {
+                                return GestureDetector(
+                                  onTap: () => Get.toNamed('/viewVideo',
+                                      arguments: {
                                         "videoPath": data.videos![i].videoPath
                                       }),
-                                      title: Text(
-                                        data.videos![i].videoName!,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Center(
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          SizedBox(
+                                            height: 150,
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(10),
+                                              child: Image.asset(
+                                                data.videos![i].thumbNailPath!,
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            height: 10,
+                                          ),
+                                          SizedBox(
+                                            width: 220,
+                                            child: Text(
+                                              data.videos![i].videoName!,
+                                              textScaleFactor: 1.5,
+                                              textAlign: TextAlign.center,
+                                              style: const TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 220,
+                                            child: Text(
+                                              data.chapterName!,
+                                              textScaleFactor: 1,
+                                              textAlign: TextAlign.center,
+                                              style: const TextStyle(
+                                                fontSize: 18,
+                                                color: Colors.black45,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
@@ -78,10 +120,9 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                           ],
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         width: MediaQuery.of(context).size.width * 0.5,
                         height: MediaQuery.of(context).size.height,
-                        color: Colors.green.shade50,
                         child: Column(
                           children: [
                             const Padding(
@@ -90,19 +131,45 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                                 'View PDF',
                                 textScaleFactor: 2,
                                 style: TextStyle(
-                                  color: Colors.black87,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Card(
-                                color: Colors.black87,
-                                child: ListTile(
-                                  title: Text(
-                                    data.pdfs!.pdfName!,
-                                    style: const TextStyle(color: Colors.white),
+                              child: GestureDetector(
+                                onTap: () => Get.toNamed('/viewPDF',
+                                    arguments: {"pdfPath": data.pdfs!.pdfPath}),
+                                child: Container(
+                                  width: 250,
+                                  height: 100,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Colors.grey.shade200,
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: SizedBox(
+                                            height: 100,
+                                            width: 70,
+                                            child: Image.asset(
+                                                'lib/assets/pdf.png')),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text(
+                                          data.pdfs!.pdfName!,
+                                          textScaleFactor: 1.5,
+                                          style: const TextStyle(
+                                              color: Colors.black87,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -112,6 +179,10 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                       ),
                     ]),
                   ),
+                );
+              } else if (snapshot.data == null) {
+                return const Center(
+                  child: Text('No video associated with this chapter'),
                 );
               } else {
                 return const Center(
