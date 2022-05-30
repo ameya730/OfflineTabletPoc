@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:app/other/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
@@ -31,7 +33,11 @@ class _ViewPDFPageState extends State<ViewPDFPage> {
                   backgroundColor: Colors.transparent,
                 ),
                 backgroundColor: Colors.transparent,
-                body: SfPdfViewer.asset(snapshot.data!.toString()),
+                body: SfPdfViewer.file(
+                  File(
+                    snapshot.data!.toString(),
+                  ),
+                ),
               ),
             );
           } else {

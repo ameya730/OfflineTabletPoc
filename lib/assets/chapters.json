@@ -1,45 +1,45 @@
 [
   {
-    "subjectName": "English",
-    "iconPath": "lib/assets/subjecticons/new-english.svg",
+    "subjectName": "અંગ્રેજી",
+    "iconPath": "/subjecticons/new-english.svg",
     "chapters": [{ "chapterName": "1. Unit-1 Vini's Smile" }]
   },
   {
-    "subjectName": "Gujrathi",
-    "iconPath": "lib/assets/subjecticons/new-english.svg",
+    "subjectName": "ગુજરાતી",
+    "iconPath": "/subjecticons/new-english.svg",
     "chapters": [{ "chapterName": "૧.  મેળામાં" }]
   },
   {
-    "subjectName": "Hindi",
-    "iconPath": "lib/assets/subjecticons/new-hindi.svg",
+    "subjectName": "હિન્દી",
+    "iconPath": "/subjecticons/new-hindi.svg",
     "chapters": [{ "chapterName": "૧. चित्र के संग-संग" }]
   },
   {
-    "subjectName": "Mathematics",
-    "iconPath": "lib/assets/subjecticons/new-mathematics.svg",
+    "subjectName": "ગણિત",
+    "iconPath": "/subjecticons/new-mathematics.svg",
     "chapters": [
       {
         "chapterName": "૧. પૂર્ણાંક સંખ્યાઓ",
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_1.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_1.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_1.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_1.png"
           },
           {
             "videoName": "અસંમેય સંખ્યાઓ",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_2.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_2.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_2.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_2.png"
           },
           {
             "videoName": "વાસ્તવિક સંખ્યા અને તેની દ્શાંશ-અભિવ્યક્તિ",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_3.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_3.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_3.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_3.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_1.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_1.pdf"
         }
       },
       {
@@ -47,13 +47,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_4.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_4.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_4.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_4.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_2.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_2.pdf"
         }
       },
       {
@@ -61,13 +61,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -75,13 +75,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -89,13 +89,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -103,13 +103,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -117,13 +117,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -131,13 +131,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -145,13 +145,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -159,13 +159,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -173,13 +173,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -187,13 +187,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -201,13 +201,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -215,13 +215,13 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       },
       {
@@ -229,25 +229,25 @@
         "videos": [
           {
             "videoName": "પ્રસ્તાવિક",
-            "videoPath": "lib/assets/s3/Maths/mp4/7Ngmt1_5.mp4",
-            "thumbNailPath": "lib/assets/s3/Maths/thumbnails/7Ngmt1_5.png"
+            "videoPath": "/s3/Maths/mp4/7Ngmt1_5.mp4",
+            "thumbNailPath": "/s3/Maths/thumbnails/7Ngmt1_5.png"
           }
         ],
         "pdfs": {
           "pdfName": "પ્રસ્તાવિક",
-          "pdfPath": "lib/assets/s3/Maths/pdf/7Ngmt1_3.pdf"
+          "pdfPath": "/s3/Maths/pdf/7Ngmt1_3.pdf"
         }
       }
     ]
   },
   {
-    "subjectName": "Sanskrit",
-    "iconPath": "lib/assets/subjecticons/new-sanskrit.svg",
+    "subjectName": "સંસ્કૃત",
+    "iconPath": "/subjecticons/new-sanskrit.svg",
     "chapters": [{ "chapterName": "૧. चित्रपदानी १ त: ३" }]
   },
   {
-    "subjectName": "Science",
-    "iconPath": "lib/assets/subjecticons/new-science.svg",
+    "subjectName": "વિજ્ઞાન",
+    "iconPath": "/subjecticons/new-science.svg",
     "chapters": [
       { "chapterName": "૧. વનસ્પતિમાં પોષણ" },
       { "chapterName": "૧૦. સજીવોમાં શ્વસન" },
@@ -272,8 +272,8 @@
     ]
   },
   {
-    "subjectName": "Social Science",
-    "iconPath": "lib/assets/subjecticons/new-socialscience.svg",
+    "subjectName": "સામાજિક વિજ્ઞાન",
+    "iconPath": "/subjecticons/new-socialscience.svg",
     "chapters": [{ "chapterName": "૧. રાજપૂતયુગ : નવાં શાસકો અને રાજ્યો" }]
   }
 ]

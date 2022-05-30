@@ -44,6 +44,9 @@ dependencies:
   flutter_cached_pdfview: ^0.4.1
   syncfusion_flutter_pdfviewer: ^20.1.57-beta
   flutter_svg: ^1.1.0
+  path_provider: ^2.0.10
+  google_fonts: ^3.0.1
+  external_path: ^1.0.1  
   
 
 dev_dependencies:
@@ -70,13 +73,7 @@ flutter:
 
   assets:
     - lib/assets/
-    - lib/assets/subjecticons/
-    - lib/assets/s3/Maths/mp4/
-    - lib/assets/s3/Maths/thumbnails/
-    - lib/assets/s3/Maths/pdf/
-    - lib/assets/s3/Science/mp4/
-    - lib/assets/s3/Science/thumbnails/
-    - lib/assets/s3/Science/pdf/
+    - lib/assets/subjecticons/ 
 
   # To add assets to your application, add an assets section, like this:
   # assets:

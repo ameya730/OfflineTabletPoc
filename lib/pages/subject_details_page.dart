@@ -98,7 +98,7 @@ class _SubjectDetailsPageState extends State<SubjectDetailsPage> {
                                           padding: const EdgeInsets.all(8.0),
                                           child: TextButton.icon(
                                             label: const Text(
-                                              'Select',
+                                              'પસંદ કરો',
                                               style: TextStyle(
                                                 fontSize: 16,
                                                 color: Colors.white,

@@ -1,5 +1,5 @@
+import 'package:path_provider/path_provider.dart';
 import 'dart:convert';
-
 import 'package:app/controllers/home_controller.dart';
 import 'package:app/controllers/learning_resource_controller.dart';
 import 'package:app/models/subject_model.dart';
@@ -90,11 +90,10 @@ class _LearningResourceState extends State<LearningResource> {
                       builder: (context, snapshot) {
                         if (snapshot.hasData &&
                             snapshot.connectionState == ConnectionState.done) {
-                          print(snapshot.data);
                           list = snapshot.data as List<Subjects>;
-
                           return Expanded(
                             child: SizedBox(
+                              width: MediaQuery.of(context).size.width * 0.7,
                               child: Align(
                                 alignment: Alignment.center,
                                 child: Wrap(
@@ -151,7 +150,7 @@ class _LearningResourceState extends State<LearningResource> {
           Padding(
             padding: const EdgeInsets.only(right: 144.0),
             child: Text(
-              'Welcome ${homeController.userName.value.capitalizeFirst}',
+              'સ્વાગત છે ${homeController.userName.value.capitalizeFirst}',
               textAlign: TextAlign.center,
               style: const TextStyle(
                 fontSize: 22,
@@ -161,7 +160,11 @@ class _LearningResourceState extends State<LearningResource> {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () async {
+              var _externalStorageDirectories =
+                  await getExternalStorageDirectories();
+              print(_externalStorageDirectories);
+            },
             icon: const Icon(
               Icons.settings,
               color: Colors.white,
@@ -214,7 +217,7 @@ class _LearningResourceState extends State<LearningResource> {
                     height: 70,
                     width: 70,
                     child: SvgPicture.asset(
-                      e.iconPath.toString(),
+                      'lib/assets${e.iconPath.toString()}',
                     ),
                   ),
                 ),

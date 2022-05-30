@@ -1,6 +1,7 @@
 import 'package:app/controllers/home_controller.dart';
 import 'package:app/other/constants.dart';
 import 'package:app/widgets/common/input.dart';
+import 'package:external_path/external_path.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -47,17 +48,6 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(
-                              top: 16.0,
-                              bottom: 16.0,
-                            ),
-                            child: Text(
-                              'G-Shala Offline',
-                              textScaleFactor: 2,
-                              style: mainHeadingStyle,
-                            ),
-                          ),
-                          Padding(
                             padding: const EdgeInsets.all(24.0),
                             child: Material(
                               elevation: 5,
@@ -69,8 +59,33 @@ class HomePage extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
+                                    ElevatedButton(
+                                        onPressed: () async {
+                                          try {
+                                            List<String> path = await ExternalPath
+                                                .getExternalStorageDirectories();
+                                            ScaffoldMessenger.of(context)
+                                                .showSnackBar(
+                                              SnackBar(
+                                                content: Text(
+                                                  path.toString(),
+                                                ),
+                                              ),
+                                            );
+                                          } catch (e) {
+                                            ScaffoldMessenger.of(context)
+                                                .showSnackBar(
+                                              SnackBar(
+                                                content: Text(
+                                                  e.toString(),
+                                                ),
+                                              ),
+                                            );
+                                          }
+                                        },
+                                        child: const Text('getPath')),
                                     const Text(
-                                      'Login',
+                                      'રવેશ કરો',
                                       textScaleFactor: 2,
                                       style: TextStyle(
                                         color: Colors.black87,
@@ -78,12 +93,12 @@ class HomePage extends StatelessWidget {
                                       ),
                                     ),
                                     Input(
-                                      hintText: 'User Name',
+                                      hintText: 'આઈડી/મોબાઈલ નંબર દાખલ કરો',
                                       onChanged: (value) =>
                                           {controller.userName.value = value},
                                     ),
                                     Input(
-                                      hintText: 'Password',
+                                      hintText: 'પાસવર્ડ દાખલ કરો',
                                       obscure: true,
                                       onChanged: (value) =>
                                           {controller.passWord.value = value},
@@ -130,7 +145,7 @@ class HomePage extends StatelessWidget {
                                                   .showSnackBar(
                                                 const SnackBar(
                                                   content: Text(
-                                                      'Please input your username and password'),
+                                                      'કૃપા કરીને તમારું વપરાશકર્તા નામ અને પાસવર્ડ દાખલ કરો'),
                                                 ),
                                               );
                                             } else {
@@ -142,7 +157,7 @@ class HomePage extends StatelessWidget {
                                             color: Colors.white,
                                           ),
                                           label: const Text(
-                                            'Login',
+                                            'રવેશ કરો',
                                             style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 16),
@@ -159,11 +174,11 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.760,
-                    child: Image.asset('lib/assets/offlineicon.gif',
-                        fit: BoxFit.fitWidth),
-                  ),
+                  // SizedBox(
+                  //   height: MediaQuery.of(context).size.height * 0.760,
+                  //   child: Image.asset('lib/assets/offlineicon.gif',
+                  //       fit: BoxFit.fitWidth),
+                  // ),
                 ],
               ),
             ),

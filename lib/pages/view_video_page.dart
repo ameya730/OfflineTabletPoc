@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:app/controllers/view_video_controller.dart';
 import 'package:app/other/constants.dart';
 import 'package:chewie/chewie.dart';
@@ -19,11 +21,12 @@ class _ViewVideoPageState extends State<ViewVideoPage> {
 
   Future getData() async {
     String? videoPath = await Get.arguments['videoPath'];
+    print(videoPath);
     return videoPath;
   }
 
   Future<void> initializePlayer(String? videoPath) async {
-    videoPlayerController = VideoPlayerController.asset(videoPath!);
+    videoPlayerController = VideoPlayerController.file(File(videoPath!));
     await Future.wait([videoPlayerController!.initialize()]);
     setUpChewie();
     controller.isVideoLoaded.value = true;

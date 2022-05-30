@@ -7,6 +7,7 @@ import 'package:app/pages/view_pdf_page.dart';
 import 'package:app/pages/view_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 void main() {
@@ -30,6 +31,9 @@ class MyApp extends StatelessWidget {
             const ResponsiveBreakpoint.resize(1000, name: DESKTOP),
           ],
           background: Container(color: const Color(0xFFF5F5F5))),
+      theme: ThemeData(
+        fontFamily: GoogleFonts.martel().fontFamily,
+      ),
       initialRoute: '/',
       initialBinding: HomeBinding(),
       getPages: [
