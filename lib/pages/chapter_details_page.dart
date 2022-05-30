@@ -78,7 +78,7 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                                     ),
                                   ),
                                   SingleChildScrollView(
-                                    child: data.videos!.isNotEmpty
+                                    child: data.videos != null
                                         ? Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceEvenly,
@@ -92,7 +92,14 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                                                     e.thumbNailPath!,
                                                     data.chapterName!))
                                                 .toList())
-                                        : const Text('No video to display'),
+                                        : const Text(
+                                            'પ્રદર્શિત કરવા માટે કોઈ વિડિયો નથી',
+                                            textScaleFactor: 2,
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                   ),
                                 ],
                               ),
@@ -114,61 +121,74 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: GestureDetector(
-                                    onTap: () async {
-                                      // ScaffoldMessenger.of(context)
-                                      //     .showSnackBar(
-                                      //   SnackBar(
-                                      //     content: Text(
-                                      //       '${sdCardPath!}${data.pdfs!.pdfPath}',
-                                      //     ),
-                                      //   ),
-                                      // );
-                                      Get.toNamed(
-                                        '/viewPDF',
-                                        arguments: {
-                                          "pdfPath":
-                                              '${sdCardPath!}${data.pdfs!.pdfPath}'
-                                        },
-                                      );
-                                    },
-                                    child: Container(
-                                      width: 250,
-                                      height: 100,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: Colors.grey.shade200,
-                                      ),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: SizedBox(
-                                              height: 100,
-                                              width: 70,
-                                              child: Image.asset(
-                                                  'lib/assets/pdf.png'),
+                                data.pdfs != null
+                                    ? Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: GestureDetector(
+                                          onTap: () async {
+                                            // ScaffoldMessenger.of(context)
+                                            //     .showSnackBar(
+                                            //   SnackBar(
+                                            //     content: Text(
+                                            //       '${sdCardPath!}${data.pdfs!.pdfPath}',
+                                            //     ),
+                                            //   ),
+                                            // );
+                                            Get.toNamed(
+                                              '/viewPDF',
+                                              arguments: {
+                                                "pdfPath":
+                                                    '${sdCardPath!}${data.pdfs!.pdfPath}'
+                                              },
+                                            );
+                                          },
+                                          child: Container(
+                                            width: 250,
+                                            height: 100,
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(10),
+                                              color: Colors.grey.shade200,
+                                            ),
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              children: [
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.all(8.0),
+                                                  child: SizedBox(
+                                                    height: 100,
+                                                    width: 70,
+                                                    child: Image.asset(
+                                                        'lib/assets/pdf.png'),
+                                                  ),
+                                                ),
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                    data.pdfs!.pdfName!,
+                                                    textScaleFactor: 1.5,
+                                                    style: const TextStyle(
+                                                        color: Colors.black87,
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                                  ),
+                                                ),
+                                              ],
                                             ),
                                           ),
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text(
-                                              data.pdfs!.pdfName!,
-                                              textScaleFactor: 1.5,
-                                              style: const TextStyle(
-                                                  color: Colors.black87,
-                                                  fontWeight: FontWeight.bold),
-                                            ),
-                                          ),
-                                        ],
+                                        ),
+                                      )
+                                    : const Text(
+                                        "પ્રદર્શિત કરવા માટે કોઈ PDF નથી",
+                                        textScaleFactor: 2,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
-                                    ),
-                                  ),
-                                ),
                               ],
                             ),
                           ),
@@ -177,7 +197,7 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                 );
               } else if (snapshot.data == null) {
                 return const Center(
-                  child: Text('No video associated with this chapter'),
+                  child: Text('આ પ્રકરણ સાથે કોઈ વિડિયો કે PDF સંકળાયેલ નથી'),
                 );
               } else {
                 return const Center(

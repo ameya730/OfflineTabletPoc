@@ -40,6 +40,15 @@ class _ViewVideoPageState extends State<ViewVideoPage> {
   }
 
   @override
+  void dispose() {
+    videoPlayerController!.dispose();
+    chewieController!.dispose();
+    chewieController!.pause();
+
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       decoration: pageBackGround,
