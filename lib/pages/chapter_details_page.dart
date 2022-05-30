@@ -21,11 +21,12 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
   }
 
   getSDCardPath() async {
-    var _externalStorageDirectories = await getExternalStorageDirectories();
-    return _externalStorageDirectories![0]
-        .toString()
-        .replaceAll("Directory: '", "")
-        .replaceAll("'", "");
+    // var _externalStorageDirectories = await getExternalStorageDirectories();
+    // return _externalStorageDirectories![0]
+    //     .toString()
+    //     .replaceAll("Directory: '", "")
+    //     .replaceAll("'", "");
+    return "lib/assets";
   }
 
   @override
@@ -117,14 +118,14 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                                   padding: const EdgeInsets.all(8.0),
                                   child: GestureDetector(
                                     onTap: () async {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(
-                                        SnackBar(
-                                          content: Text(
-                                            '${sdCardPath!}${data.pdfs!.pdfPath}',
-                                          ),
-                                        ),
-                                      );
+                                      // ScaffoldMessenger.of(context)
+                                      //     .showSnackBar(
+                                      //   SnackBar(
+                                      //     content: Text(
+                                      //       '${sdCardPath!}${data.pdfs!.pdfPath}',
+                                      //     ),
+                                      //   ),
+                                      // );
                                       Get.toNamed(
                                         '/viewPDF',
                                         arguments: {
@@ -192,13 +193,13 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
       String thumbNailPath, String chapterName) {
     return GestureDetector(
       onTap: () async {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(
-              '${sdCardPath!}$videoPath',
-            ),
-          ),
-        );
+        // ScaffoldMessenger.of(context).showSnackBar(
+        //   SnackBar(
+        //     content: Text(
+        //       '${sdCardPath!}$videoPath',
+        //     ),
+        //   ),
+        // );
         Get.toNamed(
           '/viewVideo',
           arguments: {"videoPath": '${sdCardPath!}$videoPath'},
@@ -216,8 +217,8 @@ class _ChapterDetailsPageState extends State<ChapterDetailsPage> {
                 width: 200,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
-                  child: Image.file(
-                    File('${sdCardPath!}$thumbNailPath'),
+                  child: Image.asset(
+                    '${sdCardPath!}$thumbNailPath',
                   ),
                 ),
               ),

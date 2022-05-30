@@ -59,31 +59,31 @@ class HomePage extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    ElevatedButton(
-                                        onPressed: () async {
-                                          try {
-                                            List<String> path = await ExternalPath
-                                                .getExternalStorageDirectories();
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              SnackBar(
-                                                content: Text(
-                                                  path.toString(),
-                                                ),
-                                              ),
-                                            );
-                                          } catch (e) {
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              SnackBar(
-                                                content: Text(
-                                                  e.toString(),
-                                                ),
-                                              ),
-                                            );
-                                          }
-                                        },
-                                        child: const Text('getPath')),
+                                    // ElevatedButton(
+                                    //     onPressed: () async {
+                                    //       try {
+                                    //         List<String> path = await ExternalPath
+                                    //             .getExternalStorageDirectories();
+                                    //         ScaffoldMessenger.of(context)
+                                    //             .showSnackBar(
+                                    //           SnackBar(
+                                    //             content: Text(
+                                    //               path.toString(),
+                                    //             ),
+                                    //           ),
+                                    //         );
+                                    //       } catch (e) {
+                                    //         ScaffoldMessenger.of(context)
+                                    //             .showSnackBar(
+                                    //           SnackBar(
+                                    //             content: Text(
+                                    //               e.toString(),
+                                    //             ),
+                                    //           ),
+                                    //         );
+                                    //       }
+                                    //     },
+                                    //     child: const Text('getPath')),
                                     const Text(
                                       'રવેશ કરો',
                                       textScaleFactor: 2,
@@ -174,11 +174,11 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // SizedBox(
-                  //   height: MediaQuery.of(context).size.height * 0.760,
-                  //   child: Image.asset('lib/assets/offlineicon.gif',
-                  //       fit: BoxFit.fitWidth),
-                  // ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.760,
+                    child: Image.asset('lib/assets/offlineicon.gif',
+                        fit: BoxFit.fitWidth),
+                  ),
                 ],
               ),
             ),

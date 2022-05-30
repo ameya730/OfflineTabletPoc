@@ -33,10 +33,8 @@ class _ViewPDFPageState extends State<ViewPDFPage> {
                   backgroundColor: Colors.transparent,
                 ),
                 backgroundColor: Colors.transparent,
-                body: SfPdfViewer.file(
-                  File(
-                    snapshot.data!.toString(),
-                  ),
+                body: SfPdfViewer.asset(
+                  snapshot.data!.toString(),
                 ),
               ),
             );

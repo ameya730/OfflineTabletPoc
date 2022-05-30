@@ -73,7 +73,13 @@ flutter:
 
   assets:
     - lib/assets/
-    - lib/assets/subjecticons/ 
+    - lib/assets/subjecticons/
+    - lib/assets/s3/Maths/mp4/
+    - lib/assets/s3/Maths/pdf/
+    - lib/assets/s3/Maths/thumbnails/
+    - lib/assets/s3/Science/mp4/
+    - lib/assets/s3/Science/pdf/
+    - lib/assets/s3/Science/thumbnails/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

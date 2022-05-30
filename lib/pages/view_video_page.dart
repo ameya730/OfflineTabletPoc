@@ -26,7 +26,7 @@ class _ViewVideoPageState extends State<ViewVideoPage> {
   }
 
   Future<void> initializePlayer(String? videoPath) async {
-    videoPlayerController = VideoPlayerController.file(File(videoPath!));
+    videoPlayerController = VideoPlayerController.asset(videoPath!);
     await Future.wait([videoPlayerController!.initialize()]);
     setUpChewie();
     controller.isVideoLoaded.value = true;
